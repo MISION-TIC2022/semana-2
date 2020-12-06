@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+  <div class="container-fluid p-5">
+          <api></api>
+    </div>
+
       <div class="container-fluid">
         <div class="row justify-content-center mb-5">
           <div class="col mt-5" v-for="(item,index) of team" :key=index>
@@ -11,12 +15,15 @@
 </template>
 
 <script>
+import Api from "./components/Api.vue";
 
 import TeamCard from './components/TeamCard.vue'
 
 export default {
+
   name: 'App',
   components:{
+    Api,
     TeamCard
   },
   data()
