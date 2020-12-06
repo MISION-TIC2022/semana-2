@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-  <div class="container-fluid p-5">
+  <div class="container-fluid p-5" id="news">
           <api></api>
     </div>
 
-      <div class="container-fluid">
+      <div class="container-fluid" id="team">
         <div class="row justify-content-center mb-5">
           <div class="col mt-5" v-for="(item,index) of team" :key=index>
             <TeamCard v-bind:member="item"> </TeamCard>
@@ -62,7 +62,7 @@ export default {
         {
           codigo: 5,
           nombre: "Hernan Santiago Salamanca Martinez",
-          descripcion:"Ingeniero civil. con interés en convertir ciudades por medio de alicaciones de movilidad sostenible y proyectos tecnologicos que faciliten la vida de la vida.",
+          descripcion:"Ingeniero civil. con interés en convertir ciudades por medio de aplicaciones de movilidad sostenible y proyectos tecnologicos que faciliten la vida.",
           rol: "Desarrollador Backend",
           imagen: "./santiago.jpg"
         }
